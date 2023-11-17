@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    padding: 10px;
+    min-height: 100hv;
+    align-items: center;
+    justify-content: center;
+    background:rgba(32, 162, 218,200);
+}
+
+.container{
+    width: 850px;
+    padding: 30px 35px 35px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0,0.1);
+}
+.container h2{
+    font-size: 20px;
+}
+
+.container .wrapper{
+    display: flex;
+    margin: 20px 0;
+    min-height: 335px;
+}
+.container .options{
+    display: flex;
+}
+
+.wrapper .editor-panel{
+    padding: 15px 20px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.editor-panel .title{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.editor-panel .options .controls{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.editor-panel  button{
+    outline: none;
+    height: 40px;
+    font-size: 13px;
+    color: #6C7570;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    border: 1px solid #aaa;
+    margin-right: 20px;
+}
+.editor-panel  button:hover{
+    background: #f5f5f5;
+}
+
+.filter button.active{
+    color: #fff;
+    border-color: #701fa5;
+    background: #701fa5;
+}
+
+.filter .slider{
+    margin-top: 12px;
+}
+
+.filter .slider .filter-info{
+    display: flex;
+    color: #464646;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.filter .slider input{
+    width: 100%;
+    height: 5px;
+    accent-color: #701fa5;
+}
+
+.editor-panel .rotate{
+    margin-top: 17px;
+}
+
+.editor-panel .rotate button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4 - 3px);
+}
+
+.rotate .options button:nth-child(3),
+.rotate .options button:nth-child(4){
+    font-size: 18px;
+}
+
+.rotate .options button:active{
+    color: #fff;
+    background: #701fa5;
+    border-color: #701fa5;
+}
+
+.wrapper .preview-img{
+    flex-wrap: 1;
+    display: flex;
+    overflow: hidden;
+    margin-left: 20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-img img{
+    max-width: 400px;
+    max-height: 335px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls button{
+    padding: 11px 20px;
+    margin: 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    background: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.controls .reset-filter{
+    color: #6C7570;
+    border: 1px solid #6C7570;
+}
+
+.controls .reset-filter:hover{
+    color: #f8f8f9;
+    background: #701fa5;
+    border: 1px solid #6C7570;
+}
+
+.controls .reset-filter:hover{
+    color: #fff;
+    background: #6C7570;
+}
+
+.controls .choose-img{
+    background: #6C7570;
+    border: 1px solid #6C7570;
+}
+
+.controls .save-img{
+    margin-left: 5px;
+    background: #701fa5;
+    border: 1px solid #701fa5;
+}
